@@ -1,0 +1,187 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <STYle>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            text-decoration: none;
+           
+        }
+
+        body{ background-color: lightblue;}
+
+        h1 {
+            background-color: rgb(18, 29, 109);
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            font-size: 40px;
+            padding: 60px;
+            color: rgba(255, 255, 255, 0.904);
+        }
+
+        .ALLIO {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            margin: 12px;
+
+            padding: 30px;
+            color: rgb(16, 11, 71);
+            text-decoration: underline;
+        }
+
+        .ALLIO2  {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            margin: 12px;
+
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.904);
+      
+        }
+
+        .ALLIO2 span { 
+
+            background: radial-gradient(circle, rgba(11,5,111,1) 0%, rgba(0,44,131,1) 57%, rgba(35,81,166,1) 100%);  padding: 12px;margin: 10px; border-radius: 8px;
+        }
+        #qstn{ display: flex; justify-content: center; flex-wrap: wrap; padding: 16px; }
+        .chobi{ width: 300px; height: 400px;}
+        
+        .Anim{ background-color: crimson; padding: 25px; text-align: center; border-radius: 8px; font-size: 20px; font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+        a{ color: aliceblue;}
+
+        .Anim{ 
+            transition:  color 3s , border-radius 3s
+        
+        }
+
+        .Anim:hover{ border-radius: 50%; color :rgb(0, 183, 255) }
+
+        .pop5 {  background: rgba(26, 24, 24, 0.719); width: 100%; height: 100%; z-index: 100; top: 0; left: 0; position: fixed; }
+
+
+        .pop5 img{  width: 400px; height: 600px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) ; object-fit:cover; }
+
+        .pop5 span { position: absolute; top:0; font-size: 40px; font-weight: bolder; right: 50px; color: white; cursor: pointer; z-index: 100; }
+
+        
+        .pop6 {  background: rgba(26, 24, 24, 0.719); width: 100%; height: 100%; z-index: 100; top: 0; left: 0; position: fixed; }
+
+        .pop6 img{  width: 400px; height: 600px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%) ; object-fit:cover;}
+
+        .pop6 span { position: absolute; top:0; font-size: 40px; font-weight: bolder; right: 50px; color: white; cursor: pointer; z-index: 100; }
+
+        @media screen and (max-width:700px ){ #qstn img{ width: 200px; height: 300px;  }}
+
+        @media screen and (max-width:700px ){ .pop5 img{ width: 300px; height: 400px;  }}
+
+        @media screen and (max-width:700px ){ .pop6 img{ width: 300px; height: 400px;  }}
+
+        @media screen and ( max-width:700px){ .Anim{ font-size: 10px;}}
+
+
+    </STYle>
+
+</head>
+
+<body>
+    <h1>Previous Year questions</h1>
+    <H2 class="ALLIO">GEOGRAPHY SEMESTER 1</H2>
+
+    <H2 class="ALLIO2"> <span> THEORY </span> </H2>
+
+    <DIV id="qstn">
+
+        <img class="chobi" src="theory question 2022.png" alt="">
+
+    </DIV>
+
+
+    <H2 class="ALLIO2"> <span>PRACTIAL</span></H2>
+
+    <div id="qstn">
+     <img class="chobi" src="practical question 2023.png" alt=""> 
+    </div>
+
+    
+    <H2 class="ALLIO2"> <span>GE ENGLISH</span></H2>
+
+    <div id="qstn">
+     <img class="chobi" src="English question 2023.png" alt=""> 
+    </div>
+
+    <H2 class="ALLIO2"> <span>GE BENGALI</span></H2>
+
+    <div id="qstn">
+     <img class="chobi" src="bengali ge 1st sem.jpg" alt=""> 
+    </div>
+
+    <H2 class="ALLIO2"> <span>GE PHILOSOPHY</span></H2>
+
+    <div id="qstn">
+     <img class="chobi" src="" alt=""> 
+    </div>
+
+    <H2 class="ALLIO2"> <span> ENVS </span></H2>
+    
+    <div id="qstn">
+<BUtton class="Anim">
+    <a href="ENVS questions of 2023.pdf"> CLICK HERE FOR 2022</a>
+</BUtton>
+</div>
+
+
+
+   <!-- image pop ups -->
+
+    <div class="pop5">
+         
+    <span> &times;</span>
+
+    <img src="Files/theory question 2022.png" alt="">
+
+</div>
+
+
+<div class="pop6">
+
+<span> &times;</span>
+
+<img src="Files/practical question 2023.png" alt=""> </div>
+
+
+<script>
+
+
+    
+//for pop5 images
+
+document.querySelectorAll('#qstn img') .forEach( image =>{ image.onclick = () =>{ document.querySelector('.pop5') .style.display = 'block' ;
+    
+    document.querySelector('.pop5 img').src = image.getAttribute('src');
+}
+})
+
+
+document.querySelector('.pop5 span').onclick=()=>{ document.querySelector('.pop5').style.display='none';}
+
+document.querySelector('.pop6 span').onclick=()=>{ document.querySelector('.pop6').style.display='none';}
+
+
+
+
+</script>
+
+
+</body>
+
+</html>

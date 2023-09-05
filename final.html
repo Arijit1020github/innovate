@@ -1,0 +1,333 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final sheet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+
+<style>
+
+    *{
+        margin: 0;
+        text-decoration: none;
+        padding: 0;
+        scroll-behavior: smooth;
+        background-color: rgb(5, 5, 54);
+    }
+
+
+    body{   background-color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            font-weight:bold;
+        }
+
+
+    .firstsection{ width: auto; height: auto; display: flex; justify-content: space-around; }
+      
+    .leftside{ display: flex; width: auto; height: 100%; margin: 50px;  display: flex; flex-wrap: wrap; justify-content: center;}
+    .leftside h1{ font-size: 35px; padding:12px ; color:rgb(255, 255, 255)}
+    .rightside{ display: flex; width: auto; height: 100%; margin: 40px; margin-top: 40px;  text-decoration: none; display: flex; flex-wrap: wrap; justify-content: center;}
+    .rightside ul li{   margin: 20px; list-style: none;}
+
+    .rightside ul li a{font-size: 25px;color: rgb(255, 255, 255); font-weight: 600;}
+
+    .rightside ul li a:hover{ color: rgb(131, 174, 255); }
+
+    main h2{ font-size: 35px; margin: 40px 40x; padding: 12px 12px; text-align: center; color: rgb(5, 2, 30);}
+
+    main h2 span { background-color: yellow; border-radius:7px; }
+
+    .Diagramsection{ display: flex; justify-content: center; flex-wrap: wrap; }
+
+    .Diagramsection img{ width: 400px; height: 300px; margin: 25px;}
+     
+    .calculationsection{ display: flex; justify-content: center; flex-wrap: wrap;}
+    .calculationsection img{ width: 400px; height: 300px; margin: 25px;}
+
+    .extrasection{ display: flex; justify-content: center; flex-wrap: wrap;}
+
+    .extrasection img{ width: 400px; height: 300px; margin: 25px;}
+
+    .tutorialsection{display: flex; justify-content: center; flex-wrap: wrap;}
+
+    .tutorialsection img{width: 450px; height: 300px; margin: 25px; }
+
+
+    .pop {  background: rgba(26, 24, 24, 0.719); width: 100%; height: 100%; z-index: 100; top: 0; left: 0; position: fixed; display: flex; justify-content: center; }
+
+    .pop img{  margin-top: 100px; margin-right: 50px; margin-left: 100px; height: 70%; z-index: 100;  }
+
+    .pop span{  font-size: 60px; font-weight: bolder; cursor: pointer; color: beige; margin: 50px 50px; }
+
+
+    .pop2 {  background: rgba(26, 24, 24, 0.719); width: 100%; height: 100%; z-index: 100; top: 0; left: 0; position: fixed; display: flex; justify-content: center; }
+
+    .pop2 img{  margin-top: 100px; margin-right: 50px; height: 70%; z-index: 100;}
+
+    .pop2 span{  font-size: 60px; font-weight: bolder; cursor: pointer; color: beige; margin: 50px 50px; }
+
+    .pop3 {  background: rgba(26, 24, 24, 0.719); width: 100%; height: 100%; z-index: 100; top: 0; left: 0; position: fixed; display: flex; justify-content: center; }
+
+    .pop3 img{  margin-top: 100px; margin-right: 50px; height: 70%; z-index: 100;}
+
+    .pop3 span{  font-size: 60px; font-weight: bolder; cursor: pointer; color: beige; margin: 50px 50px; }
+
+    .pop4 {  background: rgba(26, 24, 24, 0.719); width: 100%; height: 100%; z-index: 100; top: 0; left: 0; position: fixed; display: flex; justify-content: center; }
+
+    .pop4 img{  margin-top: 100px; margin-right: 50px; height: 70%; z-index: 100;}
+
+    .pop4 span{  font-size: 60px; font-weight: bolder; cursor: pointer; color: beige; margin: 50px 50px; }
+
+/* pop responsive */
+
+    @media screen and ( max-width:1450px) { .pop img { width:550px ; height: 400px;}}
+
+    @media screen and ( max-width:600px) { .pop img { width:350px ; height: 300px;}}
+
+    @media screen and ( max-width:400px) { .pop img { width:300px ; height: 250px;}}
+
+    @media screen and ( max-width:500px) { .pop img { margin-left: 50px;}}
+    
+    @media screen and ( max-width:300px) { .pop img { width:200px ; height: 150px;}}
+
+
+    @media screen and ( max-width:800px) { .pop span { margin-right:5px ;}}
+
+    @media screen and ( max-width:400px) { .pop span { margin-right:0px ;}}
+
+     /* pop2 responsive */
+
+     @media screen and ( max-width:1450px) { .pop2 img { width:550px ; height: 400px;}}
+
+@media screen and ( max-width:600px) { .pop2 img { width:350px ; height: 300px;}}
+
+@media screen and ( max-width:400px) { .pop2 img { width:300px ; height: 250px;}}
+
+@media screen and ( max-width:500px) { .pop2 img { margin-left: 50px;}}
+
+@media screen and ( max-width:300px) { .pop2 img { width:200px ; height: 150px;}}
+
+
+@media screen and ( max-width:800px) { .pop2 span { margin-right:5px ;}}
+
+@media screen and ( max-width:400px) { .pop2 span { margin-right:0px ;}}
+
+ /* pop3 responsive */
+
+ @media screen and ( max-width:1450px) { .pop3 img { width:550px ; height: 400px;}}
+
+@media screen and ( max-width:600px) { .pop3 img { width:350px ; height: 300px;}}
+
+@media screen and ( max-width:400px) { .pop3 img { width:300px ; height: 250px;}}
+
+@media screen and ( max-width:500px) { .pop3 img { margin-left: 50px;}}
+
+@media screen and ( max-width:300px) { .pop3 img { width:200px ; height: 150px;}}
+
+
+@media screen and ( max-width:800px) { .pop3 span { margin-right:5px ;}}
+
+@media screen and ( max-width:400px) { .pop3 span { margin-right:0px ;}}
+
+
+ /* pop4 responsive */
+
+
+ @media screen and ( max-width:1450px) { .pop4 img { width:550px ; height: 400px;}}
+
+@media screen and ( max-width:600px) { .pop4 img { width:350px ; height: 300px;}}
+
+@media screen and ( max-width:400px) { .pop4 img { width:300px ; height: 250px;}}
+
+@media screen and ( max-width:500px) { .pop4 img { margin-left: 50px;}}
+
+@media screen and ( max-width:300px) { .pop4 img { width:200px ; height: 150px;}}
+
+
+@media screen and ( max-width:800px) { .pop4 span { margin-right:5px ;}}
+
+@media screen and ( max-width:400px) { .pop4 span { margin-right:0px ;}}
+
+
+
+
+
+    @media  screen and ( max-width:680px) {.firstsection{ flex-direction: column;}}
+
+    @media  screen and ( max-width:680px) {.leftside{ margin-top:40px ;}}
+
+    @media  screen and ( max-width:680px) {.rightside{ margin-top:0px;}}
+
+    @media  screen and ( max-width:680px) {.rightside ul li a{ font-size: 20px; margin: 20px 20px;}}
+
+    @media  screen and ( max-width:363px) {.leftside h1{ font-size: 30px;}}
+
+    @media  screen and ( max-width:330px) {.leftside h1{ font-size: 21px;}}
+
+    @media  screen and ( max-width:330px) {.rightside ul li a{ font-size: 16px;}}
+
+    @media  screen and ( max-width:510px) {.tutorialsection img{ width: 300px; height: 200px;}}
+
+    @media  screen and ( max-width:510px) {.Diagramsection img{ width: 300px; height: 200px;}}
+
+    @media  screen and ( max-width:510px) {.calculationsection img{ width: 300px; height: 200px;}}
+
+    @media  screen and ( max-width:510px) {.extrasection img{ width: 300px; height: 200px;}}
+
+    @media  screen and ( max-width:350px) {.tutorialsection img{ width: 250px; height: 150px;}}
+
+    @media  screen and ( max-width:350px) {.Diagramsection img{  width: 250px; height: 150px;}}
+
+    @media  screen and ( max-width:350px) {.calculationsection img{ width: 250px; height: 150px; }}
+
+     @media  screen and ( max-width:350px) {.extrasection img{  width: 250px; height: 150px; }}
+
+    @media  screen and ( max-width:510px) {main h2{ font-size: 30px;}}
+
+
+    
+</style>
+
+
+</head>
+
+<body>
+    
+<section class="firstsection">
+    <div class="leftside">
+        <h1>FINAL SHEET</h1>
+    </div>
+
+    <div class="rightside">
+        <ul>
+             <li><a href="#DIAGRAMS">DIAGRAMS</a></li>
+             <li><a href="#CALCULATIONS">CALCULATIONS</a></li>
+             <li><a href="#EXTRAS">EXTRAS</a></li>
+        </ul>
+    </div>
+</section>
+
+<main>
+
+    <section class="tutorialsection" >
+        <img  src="Final sheet margin gaps.jpg" alt="">
+    </section>
+
+    <h2> <span>DIAGRAMS </span></h2>
+
+     <section class="Diagramsection" id="DIAGRAMS">
+    
+<img class="dioko" src="linear scale.jpg" alt="">
+<img  class="dioko" src="vernier scale.jpg" alt="">
+<img  class="dioko" src="polar zenith.jpg" alt="">
+<img  class="dioko" src="bonnes.jpg" alt="">
+<img  class="dioko" src="cylindrical.jpg" alt="">
+<img  class="dioko" src="choropleth.jpg" alt="">
+<img  class="dioko" src="dots sphere.jpg" alt="">
+<img  class="dioko" src="pyramid.jpg" alt="">
+<img  class="dioko" src="pie.jpg" alt="">
+<img  class="dioko" src="rocks.jpg" alt="">
+<img  class="dioko" src="minerelas.jpg" alt="">
+
+    </section> 
+     
+    <h2> <span> CALCULATIONS </span></h2>
+
+    <section class="calculationsection" id="CALCULATIONS">
+
+        <img  class="dioko" src="math.jpg" alt="">
+
+    </section>
+
+<h2> <span> EXTRAS </span></h2>
+
+    <section class="extrasection" id="EXTRAS">
+
+        <img   src="front page.jpg" alt="">
+        <img   src="HARD COVER.jpg" alt="">
+        <img src="contents.jpg" alt="">
+    </section>
+
+    <div class="pop">
+
+    <span> &times; </span>
+    <img src="linear scale.jpg" alt="">
+
+</div>
+
+<div class="pop2">
+
+    <span> &times; </span>
+    <img src="Final sheet margin gaps.jpg" alt="">
+
+</div>
+
+<div class="pop3">
+
+    <span> &times; </span>
+    <img src="math.jpg" alt="">
+
+</div>
+
+<div class="pop4">
+
+    <span> &times; </span>
+    <img src="front page.jpg" alt="">
+
+</div>
+
+
+
+</main>
+
+<script>
+
+document.querySelectorAll('.Diagramsection img').forEach( image =>{ image.onclick = () => { document.querySelector( '.pop').style.display = 'block';
+
+document.querySelector( '.pop img').src = image.getAttribute('src')
+
+}});
+
+document.querySelector('.pop span').onclick = () => { document.querySelector( '.pop').style.display = 'none';}
+
+
+document.querySelectorAll('.tutorialsection img').forEach( image =>{ image.onclick = () => { document.querySelector( '.pop2').style.display = 'block';
+
+document.querySelector( '.pop2 img').src = image.getAttribute('src')
+
+}});
+
+document.querySelector('.pop2 span').onclick = () => { document.querySelector( '.pop2').style.display = 'none';}
+
+
+document.querySelectorAll('.calculationsection img').forEach( image =>{ image.onclick = () => { document.querySelector( '.pop3').style.display = 'block';
+
+document.querySelector( '.pop3 img').src = image.getAttribute('src')
+
+}});
+
+document.querySelector('.pop3 span').onclick = () => { document.querySelector( '.pop3').style.display = 'none';}
+
+
+document.querySelectorAll('.extrasection img').forEach( image =>{ image.onclick = () => { document.querySelector( '.pop4').style.display = 'block';
+
+document.querySelector( '.pop4 img').src = image.getAttribute('src')
+
+}});
+
+document.querySelector('.pop4 span').onclick = () => { document.querySelector( '.pop4').style.display = 'none';}
+
+
+
+</script>
+
+</body>
+</html>
